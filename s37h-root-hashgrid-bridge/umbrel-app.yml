@@ -28,11 +28,12 @@ submitter: s37h-root
 widgets:
   - id: "status"
     type: "four-stats"
-    refresh: "5s"
+    refresh: "30s"
     endpoint: "widget-server:3001/widgets/status"
     link: ""
     example:
       type: "four-stats"
+      link: ""
       items:
         - title: "Pairing Code"
           text: "ABC12DEF"
