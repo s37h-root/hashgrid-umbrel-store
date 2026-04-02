@@ -1,4 +1,4 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: s37h-root-hashgrid-bridge
 category: bitcoin
 name: HashGrid Bridge
@@ -24,3 +24,24 @@ gallery:
   - 2.jpg
 releaseNotes: "Initial release"
 submitter: s37h-root
+widgets:
+  - id: "status"
+    type: "four-stats"
+    refresh: "5s"
+    endpoint: "app:3000/api/widget"
+    link: ""
+    example:
+      type: "four-stats"
+      items:
+        - title: "Pairing Code"
+          text: "ABC12DEF"
+          subtext: ""
+        - title: "Relay"
+          text: "Connected"
+          subtext: ""
+        - title: "Miners"
+          text: "3"
+          subtext: "found"
+        - title: "Peer"
+          text: "Online"
+          subtext: ""
