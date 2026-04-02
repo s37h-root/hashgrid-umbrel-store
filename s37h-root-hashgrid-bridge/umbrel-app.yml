@@ -13,6 +13,7 @@ description: >-
   Simply install the bridge, open it to see your pairing code, and enter the
   code in the HashGrid iOS app. Your miners will appear in the app instantly,
   no port forwarding or VPN required.
+icon: https://raw.githubusercontent.com/s37h-root/hashgrid-umbrel-store/main/s37h-root-hashgrid-bridge/icon.svg
 developer: HashGrid
 website: https://hashgrid.app
 repo: https://github.com/s37h-root/hashgrid-umbrel
@@ -20,8 +21,8 @@ support: https://github.com/s37h-root/hashgrid-umbrel/issues
 port: 3000
 dependencies: []
 gallery:
-  - 1.jpg
-  - 2.jpg
+  - https://raw.githubusercontent.com/s37h-root/hashgrid-umbrel-store/main/s37h-root-hashgrid-bridge/gallery/1.jpg
+  - https://raw.githubusercontent.com/s37h-root/hashgrid-umbrel-store/main/s37h-root-hashgrid-bridge/gallery/2.jpg
 releaseNotes: "Initial release"
 submitter: s37h-root
 widgets:
