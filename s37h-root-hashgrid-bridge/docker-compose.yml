@@ -10,3 +10,12 @@ services:
     environment:
       - DATA_DIR=/data
       - PORT=3000
+
+  widget-server:
+    image: ghcr.io/s37h-root/hashgrid-bridge-widget:v1.0.0
+    restart: on-failure
+    environment:
+      - BRIDGE_URL=http://host.docker.internal:3000
+      - PORT=3001
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

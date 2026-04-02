@@ -29,7 +29,7 @@ widgets:
   - id: "status"
     type: "four-stats"
     refresh: "5s"
-    endpoint: "localhost:3000/api/widget"
+    endpoint: "widget-server:3001/widgets/status"
     link: ""
     example:
       type: "four-stats"
