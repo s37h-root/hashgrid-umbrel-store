@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app:
-    image: ghcr.io/s37h-root/hashgrid-bridge:v1.0.1
+    image: ghcr.io/s37h-root/hashgrid-bridge:v1.0.2
     network_mode: host
     restart: on-failure
     volumes:
