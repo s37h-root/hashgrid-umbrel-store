@@ -2,7 +2,8 @@ version: "3.7"
 
 services:
   app:
-    image: ghcr.io/s37h-root/hashgrid-bridge:v1.0.10
+    image: ghcr.io/s37h-root/hashgrid-bridge:v1.0.9
+    network_mode: host
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR:-./data}:/data
@@ -14,5 +15,7 @@ services:
     image: ghcr.io/s37h-root/hashgrid-bridge-widget:v1.0.0
     restart: on-failure
     environment:
-      - BRIDGE_URL=http://app:3000
+      - BRIDGE_URL=http://host.docker.internal:3000
       - PORT=3001
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
