@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: s37h-root-hashgrid-bridge
 category: bitcoin
 name: HashGrid Bridge
-version: "1.0.9"
+version: "1.0.10"
 tagline: Remote miner monitoring bridge for the HashGrid iOS app
 description: >-
   HashGrid Bridge connects your local Bitcoin miners to the HashGrid iOS app
@@ -23,7 +23,7 @@ dependencies: []
 gallery:
   - https://raw.githubusercontent.com/s37h-root/hashgrid-umbrel-store/main/s37h-root-hashgrid-bridge/gallery/1.jpg
   - https://raw.githubusercontent.com/s37h-root/hashgrid-umbrel-store/main/s37h-root-hashgrid-bridge/gallery/2.jpg
-releaseNotes: "v1.0.9 — the bridge screen now reports its real version, plus reliability and connection fixes and more secure storage of its identity key. Fully compatible with existing HashGrid app versions in both directions; no re-pairing needed."
+releaseNotes: "v1.0.10 — security hardening: the bridge control panel is now reachable only through your authenticated Umbrel dashboard, not the local network. Note: because of this change the bridge can no longer auto-detect your network, so after updating, open the bridge and enter your network in the Custom Subnet field (e.g. 192.168.1) to find your miners. Fully compatible with existing HashGrid app versions; no re-pairing needed."
 submitter: s37h-root
 widgets:
   - id: "status"
